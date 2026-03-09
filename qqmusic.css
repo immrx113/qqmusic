@@ -357,7 +357,7 @@ input:focus{
     justify-content: flex-start;
     flex-wrap: wrap;
     overflow: hidden;
-    /* width: 1230px; */
+    width: 1230px;
 }
 .content-newsong-content-list-1{
     /*background-color: #31C27C;*/
@@ -736,4 +736,15 @@ input:focus{
 
 .null-active{
     background-color:rgba(0, 0, 0, 0.3);
+}
+.newsong-slider{
+    display: flex;
+    width: 9840px;
+    transition: transform 0.5s;
+    justify-content: flex-start;
+    overflow-x: hidden;
+}
+.wrap-newsong-slider{
+    width: 1200px;
+    overflow: hidden;
 }
