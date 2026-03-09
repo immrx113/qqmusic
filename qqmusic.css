@@ -320,6 +320,11 @@ input:focus{
         overflow: hidden;
         position: relative;
 }
+.wrap-content-newsong{
+        background: url(./image/bg_detail.bb32b2d1.webp) 50% 0 repeat-x;
+        overflow: hidden;
+        position: relative;
+}
 .content-newsong-header-top{
     margin: 0 auto;
     background-image: image-set(url(./image/index_tit.ee334dbf.png) 1x,url(./image/index_tit@2x.7b647f75.png) 2x) ;
@@ -345,12 +350,14 @@ input:focus{
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    /* position: relative; */
 }
 .content-newsong-content{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     overflow: hidden;
+    /* width: 1230px; */
 }
 .content-newsong-content-list-1{
     /*background-color: #31C27C;*/
@@ -647,6 +654,21 @@ input:focus{
     opacity: 0;
     transition: 0.5s;
 }
+.newsong-arrowbox {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 79px;
+    height: 108px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 10;
+}
 .arrow-left {
     left: -80px;
 }
@@ -661,7 +683,27 @@ input:focus{
     border-bottom: 2px solid black;
     transform: rotate(45deg);
 }
+.newsong-arrow-left{
+    left: -80px;
+}
+.newsong-arrow-right{
+    right: -80px;
+}
 .arrowright{
+    width:30px;
+    height:30px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(-45deg);
+}
+.newsong-arrowleft{
+    width:30px;
+    height:30px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(45deg);
+}
+.newsong-arrowright{
     width:30px;
     height:30px;
     border-right: 2px solid black;
@@ -675,6 +717,15 @@ input:focus{
     left: 0px;
 }
 .wrap-content-recommend:hover .arrow-right {
+    right: 0px;
+}
+.wrap-content-newsong:hover .newsong-arrowbox {
+    opacity: 1;
+}
+.wrap-content-newsong:hover .newsong-arrow-left {
+    left: 0px;
+}
+.wrap-content-newsong:hover .newsong-arrow-right {
     right: 0px;
 }
 .recommend-slider{
