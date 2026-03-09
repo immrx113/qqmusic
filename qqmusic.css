@@ -307,6 +307,14 @@ input:focus{
     background-color: rgba(0,0,0,0.1);
     border-radius: 12px;
 }
+.content-recommend-bottom-null{
+    display: block;
+    text-align: center;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 12px;
+}
 .wrap-content-recommend{
         background: url(./image/bg_detail.bb32b2d1.webp) 50% 0 repeat-x;
         overflow: hidden;
@@ -673,4 +681,8 @@ input:focus{
     display: flex;
     width: 2400px;
     transition: transform 0.5s;
+}
+
+.null-active{
+    background-color:rgba(0, 0, 0, 0.3);
 }
